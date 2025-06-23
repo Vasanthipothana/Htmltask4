@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSRTC Bus Pass Form</title>
+</head>
+<body>
+  <center><img src="./images/tsrtc.jpg" width="1000"></center>
+ 
+    <form autocomplete="off" action="./form.html">
+        <fieldset>
+            <legend>Applicant Details</legend>
+                <table width="100%">
+                <tr>
+                    <td><label for="name">Name*</label>
+            <input type="text" id="name" name="name" maxlength="20" required><br><br>
+            </td>
+                    <td> <label for="father">Father's / Guardian's Name*</label>
+            <input type="text" id="father" name="father" required><br><br>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <label for="dob">Date of Birth*</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+                    </td>
+                    <td><label>Gender*</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age As on</label>
+            <input type="numbers"name="years" placeholder="Years" min="0" max="100" size=1>
+            <input type="numbers" name="months" placeholder="Months" min="0" max="12"size=1>
+            <input type="numbers" name="days" placeholder="Days" min="0" max="31"size=1><br><br></td>
+                    <td><label for="aadhaar">Aadhaar No:</label>
+            <input type="text" id="aadhaar" name="aadhaar" maxlength="12"><br><br>
+                  </td>
+                </tr>
+                <tr>
+                    <td><label for="whatsapp">WhatsApp No*</label>
+            <input type="text" id="whatsapp" name="whatsapp"maxlength="10"><br><br></td>
+                    <td>Email Id:*</label>
+            <input type="email" id="email" name="email"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Photo*</label>
+            <input type="file" id="photo" name="photo"><br><br></td>
+                    <td></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential Address Details</legend>
+           <table width="100%">
+            <tr>
+              <td>Applicant's Address*</label><br>
+            <textarea id="address" name="address" maxlength="20"></textarea><br><br></td>
+              <td><label for="district">District*</label>
+            <select id="district" name="district" required>
+                <option value="HYDERABAD">HYDERABAD</option>
+            </select><br><br></td>
+            </tr>
+            <tr>
+              <td><label for="mandal">Mandal*</label>
+            <select id="mandal" name="mandal" required>
+                <option value="HYDERABAD">HYDERABAD</option>
+            </select><br><br></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><label for="pincode">Pincode*</label>
+            <input type="text" id="pincode" name="pincode"><br><br></td>
+              <td><label for="village">Village*</label>
+            <select id="village" name="village" required>
+                <option value="HYDERABAD">HYDERABAD</option>
+            </select><br><br></td>
+            </tr>
+           </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <label for="city">City*</label>
+            <select id="city" name="city">
+                <option value="Hyderabad">Hyderabad</option>
+            </select><br><br>
+
+            <label for="passType">Pass Type*</label>
+            <select id="passType" name="passType">
+                <option value="">---Select---</option>
+                <option value="Monthly Season Ticket Exp">Monthly Season Ticket Exp</option>
+                <option value="Monthly Season Ticket Plvg">Monthly Season Ticket Plvg</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+
+            <label for="paymentMode">Payment Mode*</label>
+            <select id="paymentMode" name="paymentMode">
+                <option value="Select Payment Mode">Select Payment Mode</option>
+                <option value="At Counter">At Counter</option>
+            </select><br><br>
+
+            <label for="deliveryMode">Pass Delivery Mode*</label>
+            <select id="deliveryMode" name="deliveryMode">
+                <option value="Select pass Delivery Mode">Select pass Delivery Mode</option>
+                <option value="At Counter">At Counter</option>
+            </select><br><br>
+
+            <label for="center">Collection Center*</label>
+            <select id="center" name="center">
+                <option value="">---Select---</option>
+                <option value="RTC CHARMINAR--HYD">RTC CHARMINAR--HYD</option>
+                <option value="RTC KUKATHAPALLY--HYD">RTC KUKATHAPALLY--HYD</option>
+            </select><br><br>
+        </fieldset>
+
+      <center> <label for="captcha">acBnE7 <b></b></label><br><br>
+        <input type="text" id="captcha" name="captcha" required><br><br></center>
+
+        <center><input type="submit" value="Submit"><center>
+    </form>
+</body>
+</html>
